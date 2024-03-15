@@ -10,11 +10,21 @@
 }
 
 .col {
-    background-color: rgb(247, 8, 131);
-    min-height: 200px;
     width: 30%;
     margin-bottom: 40px;
 }
+
+.hide-desktop-only{
+    display: none;
+}
+
+
+.col img {
+    width: 100%;
+    height: auto;
+}
+
+
 
 /* Tablet View */
 @media (max-width: 768px) {
@@ -23,7 +33,14 @@
     width: 47%;
 }
 
+.hide-desktop-only {
+    display: block;
 }
+
+}
+
+
+
 
 /* Mobile View */
 @media (max-width: 400px) {
@@ -32,4 +49,9 @@
         width: 100%;
     }
 
+    .hide-mobile {
+        display: none;
+    }
+
 }
+
