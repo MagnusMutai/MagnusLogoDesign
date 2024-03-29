@@ -7,7 +7,8 @@ body {
 .header-container {
     background-color: rgb(60, 60, 60);
     min-height: 100px;
-    margin-bottom: 40px;
+    position: fixed;
+    width: 100%;
 }
 
 header {
@@ -24,10 +25,6 @@ header {
 a {
     text-decoration: none;
     color: white;
-    margin-left: 10px;
-    padding: 8px 15px;
-    outline: 1px solid white;
-    /* border: 1px solid white; */
 }
 
 .container {
@@ -37,6 +34,7 @@ a {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding-top: 140px;
 }
 
 .hide-desktop-only{
@@ -63,7 +61,15 @@ a {
 .col p::first-line {
     font-weight: bold;
 }
-span {
+
+.mybutton {
+    margin-left: 10px;
+    padding: 8px 15px;
+    outline: 1px solid white;
+    /* border: 1px solid white; */
+}
+
+.highlight {
     font-weight: bold;
 }
 
@@ -78,13 +84,40 @@ span {
     display: block;
 }
 
+header {
+    display: block;
+    text-align: center;
+}
+
+.header-container {
+    position: relative;
+}
+
+.container {
+
+    padding-top: 40px;
+}
+
+nav a{
+    display: block;
+}
+
+.mybutton {
+    margin-left: 0;
+}
+
+.logo {
+    padding: 40px 0;
+}
+
+
 }
 
 
 
 
 /* Mobile View */
-@media (max-width: 400px) {
+@media (max-width: 435px) {
 
     .col {
         width: 100%;
